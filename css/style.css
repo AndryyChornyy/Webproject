@@ -1,0 +1,425 @@
+@font-face {
+    font-family: OpenSansLight;
+    src: url("../font/OpenSans-Light.ttf");
+}
+@font-face {
+    font-family:BayBitch;
+    src: url("../font/Bebas_Neue_Cyrillic.ttf");
+}
+@font-face {font-family: OpenSansBold;
+    src: url("../font/OpenSans-Bold.ttf");
+
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+html, body {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    background: url("../img/03 about us.png") #F5F5F5;
+    background-size: cover;
+
+
+}
+/*nav*/
+nav {
+    margin: 22px 0;
+    display: flex;
+    justify-content: center;
+    flex-flow: row;
+    background: rgba(255, 255, 255, 0.33);
+    height: 79px;
+
+}
+
+nav > img {
+    height: 82%;
+    margin: auto 0;
+}
+.nav {
+    display: flex;
+    list-style: none;
+    margin: auto 8%;
+}
+.nav a {
+    color: #808080;
+    font-family: BayBitch;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 0 51px;
+    font-size: 1.36rem;
+
+}
+.nav a:hover{
+    color: #0C6DC3;
+}
+#nav a{
+    color: #fff;
+}
+#nav a:hover{
+    color: #0C6DC3;
+}
+.language {
+    font-family: BayBitch;
+    font-size: 1.36rem;
+    margin: 30px 0;
+    color: #808080;
+}
+.language img {
+   height: .7rem;
+}
+
+.language:hover > li {
+    visibility: visible;
+    opacity: 1;
+
+}
+.language a {
+    color: #808080;
+    font-family: BayBitch;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 1.36rem;
+}
+.language a:hover {
+    color: #0C6DC3;
+}
+.language li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 99999;
+    -webkit-transition: opacity 0.2s linear, visibility 0.2s linear;
+    -moz-transition: opacity 0.2s linear, visibility 0.2s linear;
+    -o-transition: opacity 0.2s linear, visibility 0.2s linear;
+    transition: opacity 0.2s linear, visibility 0.2s linear;
+}
+#laguage {
+    color: #fff;
+}
+#laguage a{
+    color: #ffffff;
+}
+#language a:hover {
+    color: #0C6DC3;
+}
+/*body*/
+section{
+    display: flex;
+   flex-flow: column;
+max-width:1150px;
+    margin: 4% auto;
+   /* opacity: .5;*/
+
+}
+section h1 {
+    text-align: center;
+    font-size: 2.35rem;
+    font-family:OpenSansBold;
+    margin: 0;
+    color: #0C6DC3;
+}
+
+section hr{
+    width:60px;
+}
+.block {
+    display: flex;
+
+
+    flex-flow: row wrap;
+
+  font-family: OpenSansLight;
+    justify-content: space-between;
+
+}
+.block>div{
+    margin: 1.3% auto;
+    width: 320px;
+    height: 469px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 113px 0px #cfcfcf;
+    padding: 2.5% 1.5%;
+    display: grid;
+    grid-template-rows: 36% 14% 37%;
+}
+.block img {
+    height: 177px;
+    margin: auto 22%;
+}
+.block h2{font-family: OpenSansBold;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #0C6DC3;
+    margin: auto 1rem 0 1rem;
+
+}
+.block h3 {
+    line-height: 25px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: OpenSansLight;
+    padding: 0 24px;
+}
+.block ul{
+    line-height: 25px;
+    font-size: 1rem;
+    text-align: left;
+    font-family: OpenSansLight;
+    font-weight: bold;
+}
+.block ul>li{
+    font-weight: bold;
+    margin-left: 2.5rem;
+    text-align: left;
+    font-family: OpenSansLight;
+    line-height: 30px;
+}
+.block  a{
+
+    text-align: center;
+    color: white;
+    padding: 3px;
+    background: #0C6DC3;
+    border-radius: 20px;
+    margin: 5% 20%;
+    text-decoration: none;
+}
+footer{
+    font-family: OpenSansLight;
+    /*height: 400px;*/
+    width: 100%;
+    background: #0C6DC3;
+    color: #fff;
+    padding: 1% 0;
+}
+footer hr{
+    max-width: 1200px;
+    margin: auto;
+}
+footer h6 {
+    text-align: center;
+    margin: 1%  ;
+    color:white;
+}
+footer>div{
+    margin: 0 auto;
+    margin-bottom: 4%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+.location{
+    display: flex;
+}
+.location p {
+    margin: 0% 0 12% 0%;
+}
+.links{
+    display: flex;
+    flex-flow: column;
+    margin: 0 2%;
+}
+footer h4{
+    font-family: OpenSansBold;
+    font-size: 1.2rem;
+
+}
+.links>a{
+    color: white;
+    text-decoration: none;
+    margin: 4px 0;
+}
+footer img{
+    width: 20px;
+    margin: 1% 12px;
+    height: 100%;
+}
+.number{
+    display: inherit;
+    margin: 60px 0;
+}
+.number img {
+    margin: 20px;
+    height: 20px;
+    width: 20px;
+}
+.cont>p{
+    margin: 12% 0%;
+}
+.cont>p>img{
+    background:black;
+}
+.cont>div>a>img{
+    width: 28px;
+    margin: 5% 10% 0 6%;
+    height: 100%;
+}
+/*Animation settings*/
+#particles-js {
+    z-index: -2;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+#back {
+    z-index: -1;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(140deg, rgba(245, 245, 245, 0), #F5F5F5, #F5F5F5, #F5F5F5, rgba(245, 245, 245, 0));
+    top: 0;
+    right: 0;
+    left: 0;
+}
+/*Contact*/
+.contact{
+    font-family: OpenSansLight;
+    color: #fff;
+    display: flex;
+    border-radius: 15px;
+    max-width: 1155px;
+    flex-flow: row;
+    background: hsla(0, 0%, 0%, 0.34);
+    margin: 6% auto;
+}
+.contact form{
+    display: flex;
+    flex-flow: column;
+}
+.contact h1{
+    font-family: OpenSansBold;
+    text-align: left;
+    font-size: 2.34rem;
+    margin-bottom: 0;
+}
+.contact>div{
+    width: 50%;
+}
+.contact>div:nth-child(1){
+    padding: 2% 9%;
+    width: 32%;
+}
+.contact form>input{
+    font-size: 1.2rem;
+    width: 100%;
+    border: none;
+    background: #fff0;
+    color: white;
+    border-bottom: solid;
+    padding: 12% 0 3px 0;
+    border-bottom-width: 1px;
+    outline: unset;
+    border-color: white;
+
+
+}
+
+.contact form>textarea{
+    font-size: 1.2rem;
+    background: #fff0;
+    border: none;
+    color: white;
+    border-bottom-width: 1px;
+    border-bottom: solid;
+    padding: 4% 0 1px 0;
+    height: 122px;
+    outline: unset;
+    font-family: OpenSansLight;
+    border-width: 1px;
+}
+.contact form>input::placeholder{
+    color: white;
+}
+.contact form>textarea::placeholder{
+    color: white;
+}
+#map{
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+}
+form>input:last-child{
+    text-align: center;
+    color: #0C6DC3;
+    padding: 6px 0;
+    background: #fff;
+    border-radius: 20px;
+    margin: 13% 26%;
+    width: 46%;
+    border: none;
+    text-decoration: none;
+    font-size: 1rem;
+}
+#backimg{
+    top: 0;
+position: fixed;
+z-index: -2;
+}
+/*Aboutus*/
+.aboutus{
+display: flex;
+    flex-flow: row;
+    background: #dcdcdc70;
+    padding: 3% 0;
+}
+.we{
+    display: flex;
+    flex-flow: column;
+    max-width: 1272px;
+    margin: 4% 0 0 24%;
+}
+.aboutus>div:first-child{
+    background:url("../img/office.png") no-repeat;
+    background-position: center;
+    width: 475px;
+    height: 680px;
+    margin: 6% 8% 0 -21%;
+
+}
+.box{
+    position: absolute;
+    background: #0C6DC3;
+    height: 14rem;
+    width: 14rem;
+    margin: -1rem;
+    z-index: -1;
+}
+.aboutus>div:last-child{
+    width: 68%;
+}
+.aboutus h2{
+    font-size: 1.3rem;
+    text-indent: 1rem;
+    font-family: OpenSansLight;
+}
+.aboutus ul{
+    font-family: OpenSansBold;
+}
+.aboutus li{
+    font-family: OpenSansLight;
+list-style-type: none;
+}
+.aboutus h3 {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+.we h1{
+    text-align: left;
+    font-size: 2.3rem;
+    font-family: OpenSansBold;
+    color: #0C6DC3;
+    margin: 0 12%;
+}
+.we hr{
+    margin: 2% 16%;
+}
