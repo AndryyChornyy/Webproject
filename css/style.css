@@ -112,6 +112,7 @@ nav > img {
 section{
     display: flex;
    flex-flow: column;
+   min-width: 1100px;
 max-width:1150px;
     margin: 4% auto;
    /* opacity: .5;*/
